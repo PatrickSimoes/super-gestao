@@ -20,6 +20,25 @@ class FornecedorController extends Controller
                 'status' => 'Reprovado',
                 'cnpj' => '00.000.000/0001-01'
             ]
+            ,
+            2 => [
+                'nome' => 'Fornecedor 2',
+                'status' => 'Reprovado',
+                'cnpj' => '00.000.000/0001-01'
+            ]
+            ,
+            3 => [
+                'nome' => 'Fornecedor 2',
+                'status' => 'Reprovado',
+                'cnpj' => '00.000.000/0001-01'
+            ]
+            ,
+            4 => [
+                'nome' => 'Fornecedor 2',
+                'status' => 'Reprovado',
+                'cnpj' => '00.000.000/0001-01'
+            ]
+
         ];
 
         //echo isset($fornecedores[0] ['cnpj']) ? 'CPNJ Informado' : 'CNPJ não informado';//Operador ternario do PHP

@@ -12,8 +12,11 @@
 
     php artisan serve
 
-#  #
+# Limpar o Cache da View Compiladas #
+    
+    php artisan view:clean
 
+#  #
     
 
 
