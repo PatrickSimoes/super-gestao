@@ -46,15 +46,15 @@
 
     php artisan migrate:fresh
 
-# Abrindo o Tinker #
+## Abrindo o Tinker ##
 
     php artisan tinker
 
-# Cria um Seeder #
+## Cria um Seeder ##
 
     php artisan make:seeder classSeeder
 
-# Envia os aquilos para o banco de Dados pelo Seeder #
+## Envia os Cadastros para o banco de Dados pelo Seeder ##
     
   - Envia Tudo Que estiver no database\seeders
     ```
@@ -67,4 +67,3 @@
     ```
     php artisan db:seed --class=NomeClassSeeder
     ```
-#  #

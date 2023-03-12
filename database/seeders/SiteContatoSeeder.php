@@ -13,12 +13,13 @@ class SiteContatoSeeder extends Seeder
      */
     public function run(): void
     {
-        $contato = new SiteContato();
+       /*  $contato = new SiteContato();
         $contato->nome = 'Patrick';
         $contato->telefone = '(41)99879-4561';
         $contato->email = 'contato@contato.com';
         $contato->motivo_contato = 1;
         $contato->mensagem = 'Quero fazer contato';
-        $contato->save();
+        $contato->save(); */
+        \App\Models\SiteContato::factory()->count(100)->create();
     }
 }
