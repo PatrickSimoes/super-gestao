@@ -46,11 +46,11 @@
     
 ## Executa o metodo Down de uma Migração ##
     
-    - Executa apenas 1 Roll Back
+  - Executa apenas 1 Roll Back
     ```
     php artisan migrate:rollback
     ```
-    - Define o n° de Roll Backs
+  - Define o n° de Roll Backs
     ```
     php artisan migrate:rollback --step= 
     ```
