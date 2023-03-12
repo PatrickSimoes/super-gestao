@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mysql
+    container_name: sg_laravel
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: sg
+      MYSQL_USER: my-patrick
+      MYSQL_PASSWORD: docker
+    ports:
+      - "5001:3306"
