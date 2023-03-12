@@ -22,19 +22,19 @@ class FornecedorController extends Controller
             ]
             ,
             2 => [
-                'nome' => 'Fornecedor 2',
+                'nome' => 'Fornecedor 3',
                 'status' => 'Reprovado',
                 'cnpj' => '00.000.000/0001-01'
             ]
             ,
             3 => [
-                'nome' => 'Fornecedor 2',
+                'nome' => 'Fornecedor 4',
                 'status' => 'Reprovado',
                 'cnpj' => '00.000.000/0001-01'
             ]
             ,
             4 => [
-                'nome' => 'Fornecedor 2',
+                'nome' => 'Fornecedor 5',
                 'status' => 'Reprovado',
                 'cnpj' => '00.000.000/0001-01'
             ]
