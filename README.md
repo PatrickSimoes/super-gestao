@@ -18,8 +18,16 @@
 
 ## Criação de Models ##
     
+  - Criar de um Model 
+    ```
     php artisan make:model NomeModel
-<!-- Pode ser adicionado o "-m" para poder fazer migração par ao banco de dados -->
+    ```
+    
+  - Criar de um Model com arquivo de Migrations
+    ```
+    php artisan make:model NomeModel -m
+    ```
+    
 ## Criar Arquivo de Migração para o Banco de Dados ##
 
     php artisan migrate
@@ -32,16 +40,21 @@
 
      php -r "var_dump(extension_loaded( 'nome_extension'));
 
-## Comando para Criar Migrações especiais ##
+## Comando para Criar Migrações de Atualizações ##
 
     php artisan make:migration nome_atualiza_tables
     
 ## Executa o metodo Down de uma Migração ##
-
+    
+    - Executa apenas 1 Roll Back
+    ```
     php artisan migrate:rollback
-    or
-    php artisan migrate:rollback --step=2  
-
+    ```
+    - Define o n° de Roll Backs
+    ```
+    php artisan migrate:rollback --step= 
+    ```
+    
 ## Exclui todas as tabelas do banco de dados e recria as Migration ##
 
     php artisan migrate:fresh
@@ -54,14 +67,12 @@
 
     php artisan make:seeder classSeeder
 
-## Envia os Cadastros para o banco de Dados pelo Seeder ##
+## Envia os Cadastros para o banco de Dados pelo Seeder/Factories ##
     
   - Envia Tudo Que estiver no database\seeders
     ```
     php artisan db:seed
     ```
-
-    ou
     
   - Envia apenas um Seeder
     ```
