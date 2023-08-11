@@ -18,3 +18,11 @@
     <br>
     <button type="submit" class="{{ $class }}">ENVIAR</button>
 </form>
+<div style="position: absolute; top:0px; left:0px; width:100%; background: red">
+    <div>
+        <p>Mensagem com os erros que está faltando dados(Não é um problema)</p>
+        <pre>
+            {{ print_r($errors) }}
+        </pre>
+    </div>
+</div>

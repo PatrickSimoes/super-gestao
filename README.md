@@ -14,7 +14,7 @@
 
 ## Limpar o Cache da View Compiladas ##
     
-    php artisan view:clean
+    php artisan view:clear
 
 ## Criação de Models ##
     
