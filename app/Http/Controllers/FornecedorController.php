@@ -6,42 +6,31 @@ use Illuminate\Http\Request;
 
 class FornecedorController extends Controller
 {
-    public function index()
-    {
+    public function index() {
         $fornecedores = [
             0 => [
                 'nome' => 'Fornecedor 1',
-                'status' => 'ativo',
-                'cnpj' => null,
-                'ddd' => 41
+                'status' => 'N',
+                'cnpj' => '0',
+                'ddd' => '', //São Paulo (SP)
+                'telefone' => '0000-0000'
             ],
             1 => [
                 'nome' => 'Fornecedor 2',
-                'status' => 'Reprovado',
-                'cnpj' => '00.000.000/0001-01'
-            ]
-            ,
+                'status' => 'S',
+                'cnpj' => null,
+                'ddd' => '85', //Fortaleza (CE)
+                'telefone' => '0000-0000'
+            ],
             2 => [
-                'nome' => 'Fornecedor 3',
-                'status' => 'Reprovado',
-                'cnpj' => '00.000.000/0001-01'
+                'nome' => 'Fornecedor 2',
+                'status' => 'S',
+                'cnpj' => null,
+                'ddd' => '32', //Juiz de fora (MG)
+                'telefone' => '0000-0000'
             ]
-            ,
-            3 => [
-                'nome' => 'Fornecedor 4',
-                'status' => 'Reprovado',
-                'cnpj' => '00.000.000/0001-01'
-            ]
-            ,
-            4 => [
-                'nome' => 'Fornecedor 5',
-                'status' => 'Reprovado',
-                'cnpj' => '00.000.000/0001-01'
-            ]
-
         ];
 
-        //echo isset($fornecedores[0] ['cnpj']) ? 'CPNJ Informado' : 'CNPJ não informado';//Operador ternario do PHP
         return view('app.fornecedor.index', compact('fornecedores'));
     }
 }
