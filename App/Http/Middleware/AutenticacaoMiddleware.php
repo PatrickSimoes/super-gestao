@@ -15,25 +15,12 @@ class AutenticacaoMiddleware
      */
     public function handle(Request $request, Closure $next, $methodoAutenticacao, $perfil): Response
     {
-        echo("$methodoAutenticacao e $perfil<br>");
+        session_start();
 
-        if($methodoAutenticacao == 'padrao') {
-            echo('tem acesso<br>');
+        if(isset($_SESSION['email']) && $_SESSION['email'] != '') {
+            return $next($request);
         }else {
-            echo('pede acesso<br>');
-        }
-
-        if($perfil == 'gerente') {
-            echo('Acesso de Gente<br>');
-        }else {
-            echo('trampa ae nego<br>');
-        }
-
-        if(false) {
-            return $next($request);;
-        } else {
-            
-            return Response('Precisa de Autenticação');
+            return redirect()->route('site.login', ['erro' => 2]);
         }
     }
 }
