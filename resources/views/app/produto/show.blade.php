@@ -3,11 +3,11 @@
 @section('titulo', 'Produto')
 
 @section('conteudo')
-
+    
     <div class="conteudo-pagina">
 
         <div class="titulo-pagina-2">
-            <p>Adicionar Produto</p>
+            <p>Visualizar Produto</p>
         </div>
 
         <div class="menu">
@@ -47,3 +47,4 @@
     </div>
 
 @endsection
+
